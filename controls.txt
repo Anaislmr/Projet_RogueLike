@@ -1,15 +1,15 @@
 
 
-    CONTROLES DU JEU:							CONDITIONS DE VICTOIRE:                   
-    P = Remet a zero la partie						Avoir tue le BOSS(R) 
-    A = Ferme la console						ET
+    CONTROLES DU JEU:							         CONDITIONS DE VICTOIRE:                   
+    P = Remet a zero la partie						 Avoir tue le BOSS(R) 
+    A = Ferme la console						       ET
     Z = Deplacement vers le haut					Ouvert la porte de Sortie($)
     Q = Deplacement vers la gauche
     S = Deplacement vers le bas
     D = Deplacement vers la droite		
     
-    ELEMENTS DU JEU:							CONDITION DE DEFAITE:
-    Cles: a, b, u, w							Point de vie du joueur en dessous de 0 
+    ELEMENTS DU JEU:							           CONDITION DE DEFAITE:
+    Cles: a, b, u, w							           Point de vie du joueur en dessous de 0 
     Potions: d, e, g, n, o, x
     Armes: c, k, m, r, s, v, y
     
@@ -22,4 +22,4 @@
     /!\ Vous aurez besoin d'une cle pour traverser une porte a CHAQUE passage,
         pensez a bien utiliser vos cle intelligement /!\
 
-				APPUYEZ SUR P POUR LANCER LE SCENARIO ---->
+				                           APPUYEZ SUR P POUR LANCER LE SCENARIO ---->
