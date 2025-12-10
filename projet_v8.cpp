@@ -884,10 +884,10 @@ void affichage_controls(int x, int y){
 
     //affichage niveau monstres
     ecrire_string("NIVEAU MONSTRES:", 70, 27);
-    ecrire_string("Niveau 1: I, J, X, Y (Force: ??)", 70, 28);
-    ecrire_string("Niveau 2: V, H, K, L, M, N, O, P (Force: ??)", 70, 29);
-    ecrire_string("Niveau 3: A, C, D, E, F, G, Q, V (Force: ??)", 70, 30);
-    ecrire_string("BOSS: R (Force: ??)", 70, 31);
+    ecrire_string("Niveau 1: I, J, X, Y (Force: 5)", 70, 28);
+    ecrire_string("Niveau 2: B, H, K, L, M, N, O, P, Z (Force: 20)", 70, 29);
+    ecrire_string("Niveau 3: A, C, D, E, F, G, Q, V (Force: 50)", 70, 30);
+    ecrire_string("BOSS: R (Force: 70)", 70, 31);
 
     //Affichage specification ouverture porte
     ecrire_string("/!\\ Vous aurez besoin d'une cle pour traverser une porte a CHAQUE passage /!\\ ", 37, 33);
