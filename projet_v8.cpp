@@ -828,8 +828,8 @@ void afficher_personnage(Joueur Joueur) {
 void ecrire_stat_joueur(int x, int y, Joueur j, int nb_monstre_defeat) {
     ecrire_string("Nom:", 1, 23);
     ecrire_string(j.caras.nom, 6, 23);
-    ecrire_string("Niveau:", 14, 23);
-    ecrire_string(std::to_string(j.caras.tab_entier[0]), 22, 23);
+    ecrire_string("Niveau:", 16, 23);
+    ecrire_string(std::to_string(j.caras.tab_entier[0]), 24, 23);
     ecrire_string("Pdv:", 29, 23);
     ecrire_string("    ", 34, 23);
     ecrire_string(std::to_string(j.caras.tab_entier[1]), 34, 23);
