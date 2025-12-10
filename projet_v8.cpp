@@ -940,7 +940,7 @@ int main() {
     // Debut
 
     // Affichage utilisateur avant demarrage jeu
-    cout << "Nom du fichier de la carte du jeu a ouvrir (Pensez a bien agrandir le terminal au maximum afin d'afficher completement le jeu): ";
+    cout << "Nom du fichier de la carte du jeu a ouvrir (Pensez a bien agrandir le terminal en pleine ecran afin d'afficher completement le jeu): ";
     cin >> nom_fichier;
 
     // test du procedure initialisation_joueur().
