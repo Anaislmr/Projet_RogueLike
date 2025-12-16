@@ -1,6 +1,6 @@
 
 
-    CONTROLES DU JEU:							         CONDITIONS DE VICTOIRE:                   
+    CONTROLES DU JEU:		   					         CONDITIONS DE VICTOIRE:                   
     P = Remet a zero la partie						 Avoir tue le BOSS(R) 
     A = Ferme la console						       ET
     Z = Deplacement vers le haut					Ouvert la porte de Sortie($)
