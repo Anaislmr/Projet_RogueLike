@@ -19,7 +19,6 @@
     Niveau 3: A, C, D, E, F, G, Q, V
     BOSS: R
 
-    /!\ Vous aurez besoin d'une cle pour traverser une porte a CHAQUE passage,
-        pensez a bien utiliser vos cle intelligement /!\
+
 
 				                           APPUYEZ SUR P POUR LANCER LE SCENARIO ---->
