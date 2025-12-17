@@ -1,9 +1,9 @@
 
 
-    CONTROLES DU JEU:		   					         CONDITIONS DE VICTOIRE:                   
-    P = Remet a zero la partie						 Avoir tue le BOSS(R) 
-    A = Ferme la console						       ET
-    Z = Deplacement vers le haut					Ouvert la porte de Sortie($)
+    CONTROLES DU JEU:		   					      CONDITIONS DE VICTOIRE:                   
+    P = Remet a zero la partie						 Tuer le BOSS(R) en PREMIER 
+    A = Ferme la console						       ET ENSUITE
+    Z = Deplacement vers le haut					Sortir par la porte de Sortie($)
     Q = Deplacement vers la gauche
     S = Deplacement vers le bas
     D = Deplacement vers la droite		
