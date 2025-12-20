@@ -889,8 +889,6 @@ void affichage_controls(int x, int y){
     ecrire_string("Niveau 3: A, C, D, E, F, G, Q, V (Force: 50)", 70, 30);
     ecrire_string("BOSS: R (Force: 70)", 70, 31);
 
-    //Affichage specification ouverture porte
-    ecrire_string("/!\\ Vous aurez besoin d'une cle pour traverser une porte a CHAQUE passage /!\\ ", 37, 33);
 }
 
 bool joueur_cote_equipement(const Joueur& j, const std::vector<Equipement>& liste) {

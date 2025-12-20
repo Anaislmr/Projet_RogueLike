@@ -853,8 +853,10 @@ void ecrire_stat_joueur(int x, int y, Joueur j, int nb_monstre_defeat) {
     ecrire_string("--------------------------", 82, 18);
     ecrire_string("Boss vaincu:", 82, 20);
     ecrire_string("0 / 1", 95, 20);
+    if (j.tuer_boss==true){ecrire_string("1 / 1", 95, 20);}
     ecrire_string("Porte sortie ouverte:", 82, 22);
     ecrire_string("0 / 1", 104, 22);
+    if (j.pos.x == 71 && j.pos.y == 6){ecrire_string("1 / 1", 104, 22);}
     
 }
 
@@ -928,6 +930,8 @@ int main() {
     vector<Monstre> list_monster;
     vector<Equipement> list_equip;
     vector<Porte> list_door;
+
+
     
     
     // Debut
@@ -955,7 +959,8 @@ int main() {
     fichier_scenar="scenario.txt";
     fichier_controls="controls.txt";
     fichier_victoire="fichier_victoire.txt";
-    fichier_defaite="defaite.txt";
+    fichier_defaite="fichier_defaite.txt";
+    
 
     affichage_map(fichier_controls);
 
@@ -968,8 +973,8 @@ int main() {
     saisie_bloquante();
 
     fermer_map(fichier_scenar);
-
     
+    ecrire_stat_joueur(1, 23, player, nb_monstre_defeat);
     while (input != 'a' &&  input != KEY_LEFT &&  input != KEY_RIGHT &&  input != KEY_UP  &&  input != KEY_DOWN) {
         
         // Attend le prochain caractère (-> touche appuyée)
@@ -977,7 +982,6 @@ int main() {
 
         //Demarrage du jeu en appuyant sur p
         if (input == 'p'){
-            
 
             affichage_map(nom_fichier); 
 
@@ -1028,6 +1032,7 @@ int main() {
                     }
                     list_monster.erase(list_monster.begin() + ind_monstre);
                     ecrire_stat_joueur(1, 23, player,nb_monstre_defeat);
+                    ecrire_string("1 / 1", 95, 20);
                 }
             }
             else if (!est_porte(new_x, new_y, nom_fichier) or !est_mur(new_x, new_y, nom_fichier)) {
@@ -1089,23 +1094,24 @@ int main() {
             deplacement_monstre(nom_fichier, list_monster, player, nb_monstre_defeat);
 
             if (victoire(player, nom_fichier) == true){
-                initialiser_console(0, 0);
                 affichage_map(fichier_victoire);
                 saisie_bloquante();
-                fermer_map(nom_fichier);
-            } 
-
-            if (player.pos.x == 29  && player.pos.y == 19){
-                affichage_map(fichier_victoire);
-                saisie_bloquante();
+                fermer_map(fichier_victoire);
                 effacer_console();
                 initialiser_console(0, 0);
-            
+                ecrire_string("Appuyer sur P pour commencer une nouvelle partie.", 10, 10);
             }
 
             if (echec(player)== true){
-                fermer_map(nom_fichier);
+                effacer_console();
+                affichage_map(fichier_defaite);
+                saisie_bloquante();
+                fermer_map(fichier_defaite);
+                effacer_console();
+                initialiser_console(0, 0);
+                ecrire_string("Appuyer sur P pour commencer une nouvelle partie.", 10, 10);
             }
+            
 
         } 
     
