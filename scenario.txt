@@ -1,20 +1,15 @@
 
 
     SCENARIO DU JEU:
-                   
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION -------------- 
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
-    --------------- SCENARIO EN COURS DE CONSTRUCTION --------------
+               
+    Je... je ne sais pas ou je suis... J'etais parti explorer et maint-
+    enant je suis coince quelque part, et je dois sortir d'ici !
+
+    Tout est sombre et inquietant... Je sens que des creatures rodent
+    autour de moi. Elles sont dangereuses, je le sais...
+
+    Il y a un boss... un monstre enorme, je sens ses yeux sur moi a 
+    chaque pas... Je dois le vaincre avant de pouvoir m'echapper.
     
                             
     (appuyez sur P jusqu'a l'affichage de la carte PUIS APPUYEZ sur Z 

@@ -853,8 +853,10 @@ void ecrire_stat_joueur(int x, int y, Joueur j, int nb_monstre_defeat) {
     ecrire_string("--------------------------", 82, 18);
     ecrire_string("Boss vaincu:", 82, 20);
     ecrire_string("0 / 1", 95, 20);
+    if (j.tuer_boss==true){ecrire_string("1 / 1", 95, 20);}
     ecrire_string("Porte sortie ouverte:", 82, 22);
     ecrire_string("0 / 1", 104, 22);
+    if (j.pos.x == 71 && j.pos.y == 6){ecrire_string("1 / 1", 104, 22);}
     
 }
 
@@ -928,6 +930,8 @@ int main() {
     vector<Monstre> list_monster;
     vector<Equipement> list_equip;
     vector<Porte> list_door;
+
+
     
     
     // Debut
@@ -956,6 +960,7 @@ int main() {
     fichier_controls="controls.txt";
     fichier_victoire="fichier_victoire.txt";
     fichier_defaite="fichier_defaite.txt";
+    
 
     affichage_map(fichier_controls);
 
@@ -1027,6 +1032,7 @@ int main() {
                     }
                     list_monster.erase(list_monster.begin() + ind_monstre);
                     ecrire_stat_joueur(1, 23, player,nb_monstre_defeat);
+                    ecrire_string("1 / 1", 95, 20);
                 }
             }
             else if (!est_porte(new_x, new_y, nom_fichier) or !est_mur(new_x, new_y, nom_fichier)) {
@@ -1105,6 +1111,7 @@ int main() {
                 initialiser_console(0, 0);
                 ecrire_string("Appuyer sur P pour commencer une nouvelle partie.", 10, 10);
             }
+            
 
         } 
     
