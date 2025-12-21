@@ -796,6 +796,7 @@ void deplacement_joueur(string nom_fichier_map, int input, Joueur& Joueur, vecto
     else return;
     int idx = trouver_porte(nx, ny, porte);
     if (est_mur(nx, ny, nom_fichier_map)) {
+        message_joueur(7);
         message_joueur(8);
         return;
     }
