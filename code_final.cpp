@@ -839,7 +839,7 @@ void afficher_personnage(Joueur Joueur) {
 }
 // ----------------------------------------------------
 // VINGT-QUATRIEME SOUS-ALGORITHME
-// Role : le procedure affiche les stateristiques du joueur.  
+// Role : le procedure affiche les statistiques du joueur.  
 void ecrire_stat_joueur(int x, int y, Joueur j, int nb_monstre_defeat) {
     ecrire_string("Nom:", 1, 23);
     ecrire_string(j.caras.nom, 6, 23);
