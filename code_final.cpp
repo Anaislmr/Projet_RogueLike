@@ -839,7 +839,7 @@ void afficher_personnage(Joueur Joueur) {
 }
 // ----------------------------------------------------
 // VINGT-QUATRIEME SOUS-ALGORITHME
-// Role : le procedure affiche les statistiques du joueur.  
+// Role : le procedure affiche les stateristiques du joueur.  
 void ecrire_stat_joueur(int x, int y, Joueur j, int nb_monstre_defeat) {
     ecrire_string("Nom:", 1, 23);
     ecrire_string(j.caras.nom, 6, 23);
@@ -876,8 +876,14 @@ void ecrire_stat_joueur(int x, int y, Joueur j, int nb_monstre_defeat) {
     ecrire_string("--------------------------", 82, 18);
     ecrire_string("Boss vaincu:", 82, 20);
     ecrire_string("0 / 1", 95, 20);
+    if (j.tuer_boss == true ){
+        ecrire_string("1 / 1", 95, 20);
+    }
     ecrire_string("Porte sortie ouverte:", 82, 22);
     ecrire_string("0 / 1", 104, 22);
+    if (j.pos.x == 71 && j.pos.y == 6){
+        ecrire_string("1 / 1", 104, 22);
+    }
     
 }
 // --------------------------------------------------
